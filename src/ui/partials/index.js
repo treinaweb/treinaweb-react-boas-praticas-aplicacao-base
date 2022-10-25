@@ -1,7 +1,7 @@
 
-import useIndex from '../../data/hooks/partials/useIndex'
-import CardProfessor from '../components/cards/cardProfessor'
-import Fetch from '../components/feedback/fetch'
+import useIndex from 'src/data/hooks/partials/useIndex'
+import CardProfessor from 'src/ui/components/cards/cardProfessor'
+import Fetch from 'src/ui/components/feedback/fetch'
 import styles from './style.module.css'
 
 export default function ListaProfessores() {

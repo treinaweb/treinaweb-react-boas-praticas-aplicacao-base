@@ -1,5 +1,5 @@
 import styles from './style.module.css'
-import { Formatter } from '../../../../data/service/formatter'
+import { Formatter } from 'src/data/service/formatter'
 
 export default function CardProfessor({ professor = {} }) {
 

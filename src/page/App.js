@@ -1,7 +1,7 @@
-import styles from '../ui/styles/App.module.css'
-import Footer from '../ui/components/surfaces/footer';
-import Header from '../ui/components/surfaces/header';
-import ListaProfessores from '../ui/partials';
+import styles from 'src/ui/styles/App.module.css'
+import Footer from 'src/ui/components/surfaces/footer';
+import Header from 'src/ui/components/surfaces/header';
+import ListaProfessores from 'src/ui/partials';
 function App() {
 
   return (
