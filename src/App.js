@@ -11,7 +11,12 @@ function App() {
   useEffect(() => {
     fetch('https://alunos.treinaweb.com.br/hyperprof/api/professores', {
       method: 'GET',
-    }).then((response) => response.json()).then((data) => setData(data)).catch(() => setData([]))
+    }).then((response) => response.json()).then((data) => {
+      setData(data)
+
+    }).catch(() => {
+      setData([])
+    })
 
   }, [])
 
@@ -27,12 +32,12 @@ function App() {
             <div className={styles.box_card}>
               {data?.map((professor) => {
                 return (
-                  <div className={styles.card}>
+                  <div key={professor.id} className={styles.card}>
                     <img className={styles.image_card} src={professor.foto_perfil ?? '/person.png'} alt={professor.nome} />
                     <div className={styles.conteudo_card}>
                       <div>
                         <h3 className={styles.title}>{professor.nome}</h3>
-                        <span> {formatter.format(professor.valor_aula)}</span>
+                        <span> {formatter.format(professor.valor_hora)}</span>
                         <p className={styles.descricao}>
                           {professor.descricao}
                         </p>
