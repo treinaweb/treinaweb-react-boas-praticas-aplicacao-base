@@ -1,27 +1,11 @@
-import { useEffect, useState } from "react"
+
+import useIndex from '../../data/hooks/partials/useIndex'
 import styles from './style.module.css'
+
+
+
 export default function ListaProfessores() {
-    const [data, setData] = useState()
-
-    const formatter = new Intl.NumberFormat("pt-BR", {
-        style: "currency",
-        currency: "BRL",
-    });
-
-
-
-    useEffect(() => {
-        fetch('https://alunos.treinaweb.com.br/hyperprof/api/professores', {
-            method: 'GET',
-        }).then((response) => response.json()).then((data) => {
-            setData(data)
-
-        }).catch(() => {
-            setData([])
-        })
-
-    }, [])
-
+    const { data, formatter } = useIndex()
 
     return (
 
