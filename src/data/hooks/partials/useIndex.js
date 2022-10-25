@@ -13,6 +13,7 @@ export default function useIndex() {
         fetch('https://alunos.treinaweb.com.br/hyperprof/api/professores', {
             method: 'GET',
         }).then((response) => response.json()).then((data) => {
+
             setData(data)
 
         }).catch(() => {
