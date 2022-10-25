@@ -1,0 +1,14 @@
+/* HEADER */
+
+.header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .header img {
+    width: 300px;
+  }
+}
+
+/* HEADER */
