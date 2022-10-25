@@ -1,0 +1,54 @@
+/* CARD */
+
+.card {
+  background-color: #dddddd;
+  width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo_card {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.descricao {
+  font-weight: 200;
+  color: #616161;
+}
+
+.image_card {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 200px;
+}
+
+/* CARD */
+
+/* BOTÃO */
+
+.button {
+  color: white;
+  background-color: blue;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2222fd;
+}
+
+/* BOTÃO */
